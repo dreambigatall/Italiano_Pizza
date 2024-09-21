@@ -46,7 +46,7 @@ const userSlice= createSlice({
   initialState,
   reducers:{
     updateName(state, action){
-      state.userName=action.payload;
+      state.username=action.payload;
     },
   },
   extraReducers: (builder) =>
@@ -70,5 +70,5 @@ const userSlice= createSlice({
 export const {updateName}=userSlice.actions;
 export default userSlice.reducer;
 //
-export const getUserName=state=>state.user.userName;
+export const getUserName=state=>state.user.username;
 
